@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>我的技术与生活——创建了第一个个人网站 | Hexo</title>
+  <title>我的技术与生活——LINQ 表达式 l | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="../imgs/shortcut-icon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../css/public.css" />
-  <link rel="stylesheet" href="../css/layout.css" />
-  <link rel="stylesheet" href="../css/iconfont.css" />
-  <link rel="stylesheet" href="../css/APlayer.min.css" />
-  <script src="../js/APlayer.min.js"></script>
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/jquery.pjax.min.js"></script>
+  <link rel="shortcut icon" href="../../../../imgs/shortcut-icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../../css/public.css" />
+  <link rel="stylesheet" href="../../../../css/layout.css" />
+  <link rel="stylesheet" href="../../../../css/iconfont.css" />
+  <link rel="stylesheet" href="../../../../css/APlayer.min.css" />
+  <script src="../../../../js/APlayer.min.js"></script>
+  <script src="../../../../js/jquery.min.js"></script>
+  <script src="../../../../js/jquery.pjax.min.js"></script>
 
   <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
   <script>
-    document.title = `我的技术与生活——创建了第一个个人网站`
+    document.title = `我的技术与生活——LINQ 表达式 l`
   </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
@@ -235,7 +235,7 @@
 <div class="main-left">
   <div class="main-left--block">
     <div class="main-left--info">
-      <img src="../imgs/avatar.jpg"" class="main-left--avatar" />
+      <img src="../../../../imgs/avatar.jpg"" class="main-left--avatar" />
       <div class="main-left--intro">
         <p class="main-left--name">Cola.</p>
         <div class="main-left--tags">
@@ -347,28 +347,47 @@
       <div id="main-container" class="main-container">
 
 
-  <link rel="stylesheet" href="../css/partial/article.css" />
+  <link rel="stylesheet" href="../../../../css/partial/article.css" />
 
 <div class="article-container">
   <div class="article">
-    <h1 class="article-title">创建了第一个个人网站</h1>
+    <h1 class="article-title">LINQ 表达式 l</h1>
     <div class="article-info">
       <div class="article-info--item">
         <div class="article-info--info">
           
+          <div class="article-info--categories">
+            <span>分类：</span>
+            <a class="category-link" href="../../../../categories/C-%E6%95%99%E7%A8%8B/">C#教程</a>
+          </div>
           
-          <p class="article-info--date">日期：2023-10-19 22:24:34</p>
+          
+          <div class="article-info--tags">
+            <span>标签：</span>
+            <a class="tag-link" href="../../../../tags/C/" rel="tag">C#</a>
+          </div>
+          
+          <p class="article-info--date">日期：2023-10-20 22:28:17</p>
         </div>
-        <img src="../imgs/default-cover.webp" alt="" class="article-cover">
+        <img src="../../../../imgs/default-cover.webp" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content markdown-body">
-      
+      <p>#LINQ 表达式 l</p>
+<h3 id="简单查询"><a href="#简单查询" class="headerlink" title="简单查询"></a>简单查询</h3><p> 语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> 1.获取数据源</span><br><span class="line"> int[] nums = &#123; 6， 8， 5， 4， 3， 1， 7， 2， 9， 10 &#125;;</span><br><span class="line"> var res = 从 i 在数字中选择 i ;</span><br><span class="line">条件</span><br><span class="line">var ou = from i in nums</span><br><span class="line"> 其中 i % 2 == 0</span><br><span class="line"> 选择 i ;</span><br><span class="line"></span><br><span class="line">2整除和3整除</span><br><span class="line">var chu = 从 i 以 nums 为单位</span><br><span class="line"> 其中 i % 2 == 0 &amp;&amp; i % 3 == 0</span><br><span class="line"> 选择 i;</span><br></pre></td></tr></table></figure>
+<h3 id="模糊查询"><a href="#模糊查询" class="headerlink" title="模糊查询"></a>模糊查询</h3><p>Contains：判断指定字符是否出现在字符串中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> string[] names = &#123; “张三”， “李四”， “王五”， “张一山” &#125;;</span><br><span class="line"></span><br><span class="line">var zhang = 名字中来自 n</span><br><span class="line"> 其中 n.包含（“张”）</span><br><span class="line"> 选择 N;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="复合-from-子句"><a href="#复合-from-子句" class="headerlink" title="复合 from 子句"></a>复合 from 子句</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">var jige = from s in list // 从列表中选取每个元素，并将其赋值给变量</span><br><span class="line"> from sc in s.Scores // 从s的Scores属性中选取每个元素，并将其赋值给变量sc</span><br><span class="line"> where sc.Score &gt;= 60 // 仅选择分数大于等于60的元素</span><br><span class="line"> select new &#123; // 创建一个新的匿名对象，包含以下属性：</span><br><span class="line"> ID = s.ID， // 使用s的ID属性值赋值给ID属性</span><br><span class="line"> s.Name， // 使用s的Name属性值赋值给Name属性</span><br><span class="line"> SCName = sc.Name， // 使用sc的Name属性值赋值给SCName属性</span><br><span class="line"> sc.Score， // 使用sc的Score属性值赋值给Score属性</span><br><span class="line"> &#125;;</span><br><span class="line"></span><br><span class="line">Console.WriteLine（jige.计数（））;输出符合条件的元素个数</span><br><span class="line"></span><br><span class="line">foreach （var s in jige） // 遍历符合条件的每个元素，并将其赋值给变量s</span><br><span class="line">&#123;</span><br><span class="line"> Console.Write（s.ID + “\t”）;输出ID属性值</span><br><span class="line"> Console.Write（s.Name + “\t”）;输出Name属性值</span><br><span class="line"> Console.Write（s.SCName + “\t”）;输出SCName属性值</span><br><span class="line"> Console.Write（s.Score + “\t”）;输出Score属性值</span><br><span class="line"> Console.WriteLine（）;换行</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这段代码使用LINQ查询语法从一个列表中选择符合条件的元素，并输出它们的属性值。首先，<strong>通过两个from子句将列表中的每个元素和其Scores属性中的每个元素进行组合。</strong>然后，使用where子句筛选出分数大于等于60的元素。最后，使用select子句创建一个新的匿名对象，该对象包含ID、Name、SCName和Score属性。在foreach循环中，遍历符合条件的每个元素，并将其属性值输出到控制台。最后，<strong>使用Console.WriteLine（jige.Count（））输出符合条件的元素个数。</strong></p>
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var oudesc = from i in nums  // 从nums列表中选取每个元素，并将其赋值给变量i</span><br><span class="line">             where i % 2 == 0  // 仅选择能被2整除的元素（即偶数）</span><br><span class="line">             orderby i ascending  // 按升序对选取的元素进行排序</span><br><span class="line">             select i;  // 选择排序后的元素，并将其赋值给变量oudesc</span><br></pre></td></tr></table></figure>
+<p>这段代码使用LINQ查询语法从一个列表中选择偶数并按<strong>升序排序</strong>。首先，通过from子句将列表中的每个元素赋值给变量i。然后，使用where子句筛选出能被2整除的元素，即偶数。接下来，使用orderby子句按升序对筛选后的元素进行排序。最后，使用select子句选择排序后的元素，并将其赋值给变量oudesc。</p>
+
     </article>
     
     <div class="read-nums">
       <!-- id 将作为查询条件 -->
-      <span id="log/logName.html" class="leancloud_visitors" data-flag-title="Your Article Title">
+      <span id="2023/10/20/LINQ-表达式/" class="leancloud_visitors" data-flag-title="Your Article Title">
         <em class="post-meta-item-text">浏览量</em>
         <i class="leancloud-visitors-count"></i>
       </span>
@@ -384,8 +403,18 @@
     <div class="article-catelogue--wrapper">
       <div class="catelogue catelogue-1">
         <h3>目录</h3>
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">简单查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.</span> <span class="toc-text">模糊查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E5%90%88-from-%E5%AD%90%E5%8F%A5"><span class="toc-number">3.</span> <span class="toc-text">复合 from 子句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F"><span class="toc-number">4.</span> <span class="toc-text">排序</span></a></li></ol>
       </div>
+      
+        <div class="catelogue catelogue-2">
+           
+          
+            <p>
+              <span>下一篇</span>
+              <a href="/2023/10/19/如何使用hexo-theme-cola主题/">如何使用hexo-theme-cola主题</a>
+            </p>
+          
+        </div>
       
     </div>
   </div>
@@ -404,7 +433,7 @@
     recordIP: config.recordIP,
     visitor: config.visitor,
     enableQQ: config.enableQQ,
-    path: 'log/logName.html'
+    path: '2023/10/20/LINQ-表达式/'
   })
 </script>
 
