@@ -370,10 +370,9 @@
         <span>2023-10-19 22:24:34</span>
         <span>星期四</span>
       </h2>
-      <h1 class="log-main-title"><a href=".././log/logName.html">logName</a></h1>
+      <h1 class="log-main-title"><a href=".././log/logName.html">创建了第一个个人网站</a></h1>
       <div class="log-wrapper false" style="max-height: 1000px;">
-        <article class="article-content"><p>创建了第一个个人网站</p>
-</article>
+        <article class="article-content"></article>
         
       </div>
     </div>
@@ -442,7 +441,7 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"暮野荒原","artist":"吴垚滔","url":"http://m801.music.126.net/20231020183554/289770c207069e268569205ce64c36e8/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/29439397704/257e/f982/477f/f65146a2083734cb5205a1f668b4534f.mp3","cover":"http://p2.music.126.net/ZBqNXvDxQ-gxJklx2J-Yog==/109951168748708992.jpg?param=130y130,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"飘向北方","artist":"那吾克热-NW,尤长靖","url":"http://m701.music.126.net/20231020161459/5d03722b576a1ce5e1bfab4b90c61423/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/28481674672/7004/1d57/5b82/842ca35dba5f7a82ead5e4c078f3661d.mp3","cover":"http://p2.music.126.net/D-mpVLLwMrA-hPu0QPYUNQ==/109951163551410648.jpg?param=130y130,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"}]`)
+  const musics = JSON.parse(`[{"name":"安河桥","artist":"宋冬野","url":"http://ting6.yymp3.net:82/new25/songdongye/11.mp3","cover":"https://img2.baidu.com/it/u=1260056724,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"暮野荒原","artist":"吴垚滔","url":"http://music.163.com/song/media/outer/url?id=2065224405.mp3","cover":"http://p2.music.126.net/ZBqNXvDxQ-gxJklx2J-Yog==/109951168748708992.jpg?param=130y130,2862720033&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"},{"name":"飘向北方","artist":"那吾克热-NW,尤长靖","url":"http://music.163.com/song/media/outer/url?id=1308818967.mp3","cover":"http://p2.music.126.net/D-mpVLLwMrA-hPu0QPYUNQ==/109951163551410648.jpg?param=130y130,1076343118&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
     audio: musics,
